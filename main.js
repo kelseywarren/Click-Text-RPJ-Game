@@ -403,8 +403,8 @@ function fightFly() {
 
 
 function attack() {
-text.innerText = "The " + enemies[battle].name + " attacks you.";
-text.innerText += " You attack " + enemies[battle].name + " with your " + weapons[equippedWeapon].name + ". ";
+text.innerText = "The " + enemies[battle].name + " attacks you for " + enemies[battle].power + " damage points.";
+text.innerText += " You attack " + enemies[battle].name + " with your " + weapons[equippedWeapon].name + " for " + weapons[equippedWeapon].power + " damage points.";
 
 playerDamaged();
 enemyDamaged();
