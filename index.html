@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Project Phantasy</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link href="./resources/css/index.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1> Project Phantasy </h1>
+
+  <main id="game">
+    <div id="enemy">
+      <span id="enemyName">Enemy: <strong><span id="enemyNameValue"></span></strong></span>
+      <span id="enemyHealth">Health: <strong><span id="enemyHealthValue"></span></strong></span>
+      <span id="enemyLevel">Level: <strong><span id="enemyLevelValue"></span></strong></span>
+      <button id="enemyInfo">Info</button>
+    </div>
+    
+    <div id="text">
+      <p> Welcome to Project Phantasy. You have been trapped in a paradigm shift caused by an unknown force. Explore the environment around you, and overcome the unknown to escape back to reality. </p>
+    </div>
+
+    <div id="wepShop">
+      <button id="wep0">Short Sword<br>power: 3<br>level requirement: 1<br>already owned</button>
+
+      <button id="wep1">Kinetic Dagger<br>power: 7<br>level requirement: 3 <br>cost: 25</button>
+
+      <button id="wep2">Gunblade<br>power: 16<br>level requirement: 4<br>cost: 40</button>
+
+      <button id="wep3">Great Axe<br>power: 32<br> level requirement: 6<br>cost: 70</button>
+
+      <button id="wep4">Ethereal Sword<br>power: 64<br> level requiremenet: 8<br>cost: 105</button>
+
+      <button id="wep5">Soul Sword<br> power: 128<br> level requirement: 10<br>cost: 200</button>
+    </div>  
+  </main>
+
+  <section id="locations">
+    <div id="matrix">
+      <button id="button1">Matrix</button>
+    </div>
+
+    <div id="forest">
+      <button id="button2">Floating Forest</button>
+    </div>
+    
+    <div id="abyss">
+      <button id="button3">Azure Abyss</button>
+    </div>
+
+    <div id="store">
+      <button id="button4">Store</button>
+    </div>
+  </section>
+
+  <section id="stats">
+    <span id="health">Health: <strong><span id="healthValue">100</span></strong></span>
+    <span id="coins">Coins: <strong><span id="coinsValue">1000</span></strong></span>
+    <span id="level">Level: <strong><span id="levelValue">10</span></strong></span>
+    <span id="equipped">Weapon: <strong><span id="equippedValue">Short Sword</span></strong></span>
+    <button id="inventoryMenu">Inventory</button>
+  </section>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
