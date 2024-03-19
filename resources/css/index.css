@@ -1,0 +1,98 @@
+body {
+    background-color: #2A0D4C;
+    color: seashell;
+  }
+  
+  h1 {
+    text-align: center;
+    font: 13px;
+  
+    
+  }
+  
+  main {
+    width: 500px;
+    height: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 1px solid black;
+  }
+  
+  #enemy {
+    text-align: center;
+    border: 1px solid black;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    display: none;
+  }
+  
+
+  #enemyName, #enemyHealth, #enemyLevel {
+    padding: 20px;
+  }
+  
+  #enemyLevel {
+    padding-right: 15px;
+  }
+  
+  #text {
+    padding: 15px;
+  }
+
+  #inv {
+    display: block;
+  }
+  #wepShop {
+    display: none;
+    text-align: center;
+  }
+
+  #locations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+    gap: 5px;
+    text-align: center;
+    width: 400px;
+  }
+  
+  #matrix {
+    border: 1px solid black;
+    padding: 10px;
+    
+  }
+  
+  #forest {
+    border: 1px solid black;
+    padding: 10px;
+    
+  }
+  
+  #abyss {
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  #store {
+    border: 1px solid black;
+    padding: 10px;
+  }
+  #stats {
+    text-align: center;
+    padding-top: 0px;
+    border: 1px solid seashell;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 400px;
+  }
+  #health, #coins, #level {
+    padding: 20px;
+  }
