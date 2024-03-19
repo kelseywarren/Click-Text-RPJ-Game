@@ -1,11 +1,12 @@
 //button assignments
+
 const button1 = document.getElementById("button1");
 const button2 = document.getElementById('button2');
 const button3 = document.getElementById('button3');
 const button4 = document.getElementById('button4');
 
 const button5 = document.getElementById('inventoryMenu');
-//const button6 = document.getElementById('enemyInfo');
+const button6 = document.getElementById('enemyInfo');
 
 const button0 = document.getElementById('wep0');
 
@@ -21,15 +22,20 @@ const button11 = document.getElementById('wep5');
 
 const text = document.getElementById('text');
 
+//player value text
+
 const healthText = document.getElementById('healthValue');
 const coinsText = document.getElementById('coinsValue');
 const levelText = document.getElementById('levelValue');
 const weaponText = document.getElementById('equippedValue');
 
+//enemy value text 
 
 const enemyNameText = document.getElementById('enemyNameValue');
 const enemyHealthText = document.getElementById('enemyHealthValue');
 const enemyLevelText = document.getElementById('enemyLevelValue');
+
+// starting stats 
 
 let health = 100;
 let coins = 1000;
@@ -38,6 +44,8 @@ let battle;
 let equippedWeapon = 0;
 let hideWep;
 let inventory = ['Short Sword'];
+
+//object array of weapons 
 
 const weapons = [
   {
@@ -136,13 +144,17 @@ const enemies = [
   }
 ];
 
+//location button onlicks
+
 button1.onclick = goMatrix;
 button2.onclick = goForest;
 button3.onclick = goAbyss;
 button4.onclick = goStore;
 
 button5.onclick = goInventory; 
-//button6.onclick = enemyInfo; 
+button6.onclick = enemyInfo; 
+
+//weapon button onclicks 
 
 button7.onclick = buyDagger;
 button8.onclick = buyGunblade;
@@ -150,6 +162,7 @@ button9.onclick = buyAxe;
 button10.onclick = buyESword;
 button11.onclick = buySSword;
 
+// location functions 
 
 function goBase() {
   enemy.style.display = "none";
@@ -218,6 +231,8 @@ function goStore() {
   button4.onclick = goBase;
 };
 
+// Inventory function
+
 function goInventory() {
   let inv = [];
   for (i = 0; i < inventory.length; i++){
@@ -227,6 +242,7 @@ function goInventory() {
 
 };
 
+// Buy health function
 
 function buyHealth() {
   wepShop.style.display = "none";
@@ -243,6 +259,7 @@ function buyHealth() {
   }
 };
 
+// Buy weapon function
 
 function buyWeapons() {
   wepShop.style.display = "block";
@@ -265,11 +282,17 @@ function buyWeapons() {
       
 };
 
+// prevents weapon button from deactivating when selecting cancel
+
 function deactivate(button) {
   button.disabled = "true";
 }
 
+// disables starting weapon button
+
 button0.disabled = "true";
+
+// Weapon functions 
 
 function buyDagger() {
   newWep = 1;
@@ -338,12 +361,12 @@ function fightFly() {
   };
   
   
-  const fightBeam = () => {
+ function fightBeam() {
   battle = 1;
   goFight();
   };
   
-  const fightHeat = () => {
+ function fightHeat () {
   battle = 2;
   goFight();
   };
@@ -353,27 +376,27 @@ function fightFly() {
   goFight();
   };
   
-  const fightSilver = () => {
+ function fightSilver() {
   battle = 4;
   goFight();
   };
   
-  const fightMammoth = () => {
+ function fightMammoth() {
   battle = 5;
   goFight();
   };
   
-  const fightWhale = () => {
+ function fightWhale () {
   battle = 6;
   goFight();
   };
   
-  const fightMass = () => {
+ function fightMass() {
   battle = 7;
   goFight();
   };
   
-  const fightShadow = () => {
+ function fightShadow() {
   battle = 8;
   goFight();
   };
