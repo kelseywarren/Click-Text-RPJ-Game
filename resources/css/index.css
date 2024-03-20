@@ -51,6 +51,11 @@ body {
     text-align: center;
   }
 
+  #itemShop {
+    display: none;
+    text-align: center;
+  }
+
   #locations {
     display: flex;
     justify-content: center;
