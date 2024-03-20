@@ -22,8 +22,8 @@
 </ul>
 
 <h2>Notes</h2>
-<p>
-  - Game is currently only optimized for desktop. <br>
-  - Currently focused on building functionalilty and features, with styling and presentation of the game as the secondary focus. <br>
-  - Despite being a personal project, I am open to anyone making commits and pull requests. I welcome any opportunity to learn. <br>
-</p>
+<ul>
+  <li> Game is currently only optimized for desktop. </li>
+  <li> Currently focused on building functionalilty and features, with styling and presentation of the game as the secondary focus. </li>
+  <li> Despite being a personal project, I am open to anyone making commits and pull requests. I welcome any opportunity to learn. </li>
+</ul>
