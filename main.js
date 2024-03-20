@@ -414,7 +414,10 @@ enemyDamaged();
 };
 
 function block() {
-text.innerText = "You block"
+health -= enemies[battle].power /5;
+healthValue.innerText = health;
+
+text.innerText = "You block the " + enemies[battle].name + " attack and take reduced damaged of " + enemies[battle].power / 5 + ".";
 };
 
 function heal() {
