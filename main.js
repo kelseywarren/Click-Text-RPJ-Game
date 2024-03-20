@@ -20,6 +20,8 @@ const button10 = document.getElementById('wep4');
 
 const button11 = document.getElementById('wep5');
 
+const button20 = document.getElementById('hPotion');
+
 const text = document.getElementById('text');
 
 //player value text
@@ -85,6 +87,15 @@ const weapons = [
     level: 10,
     cost: 200
   }  
+];
+
+// object array of items
+
+const items = [
+  {
+    name: "Health Potion",
+    cost: 10
+  }
 ];
   
 const enemies = [
@@ -162,6 +173,7 @@ button9.onclick = buyAxe;
 button10.onclick = buyESword;
 button11.onclick = buySSword;
 
+
 // location functions 
 
 function goBase() {
@@ -227,7 +239,7 @@ function goStore() {
   button4.innerText = 'Leave Store';
   button1.onclick = buyHealth;
   button2.onclick = buyWeapons;
-  button3.onclick = buyPotion;
+  button3.onclick = buyItems;
   button4.onclick = goBase;
 };
 
@@ -263,6 +275,7 @@ function buyHealth() {
 
 function buyWeapons() {
   wepShop.style.display = "block";
+  itemShop.style.display = "none";
     if (level < weapons[newWep].level) {
     text.innerText = "You must be level " + weapons[newWep].level + " to purchase weapons[newWep].name"; 
   };
@@ -334,9 +347,28 @@ function buySSword() {
  
 };
 
-function buyPotion() {
+
+button20.onclick = buyHealthPotion;
+
+// Buy items function
+
+function buyItems() {
+itemShop.style.display = "block";
+wepShop.style.display = "none";
+if (coins >= items[newItem].cost && confirm("Are you sure you want to purchase " + items[newItem].name + " for " + items[newItem].cost + " coins?")){
+ coins-= items[newItem].cost;
+ coinsText.innerText = coins;
+
+ inventory.push(items[newItem].name);
+};
+
 
 };
+
+function buyHealthPotion() {
+  newItem = 0;
+  buyItems();
+}
 
 function goFight() {
   enemy.style.display = "block";
