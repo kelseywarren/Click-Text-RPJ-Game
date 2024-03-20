@@ -355,6 +355,8 @@ function goFight() {
 
 };
 
+// Enemy fight functions
+
 function fightFly() {
   battle = 0;
   goFight()
