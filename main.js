@@ -179,6 +179,7 @@ button11.onclick = buySSword;
 function goBase() {
   enemy.style.display = "none";
   wepShop.style.display = "none";
+  itemShop.style.display = "none";
   text.innerText = "You are back at the starting point."
   button1.innerText = "Matrix";
   button2.innerText = "Floating Forest";
@@ -362,7 +363,6 @@ if (coins >= items[newItem].cost && confirm("Are you sure you want to purchase "
  inventory.push(items[newItem].name);
 };
 
-
 };
 
 function buyHealthPotion() {
@@ -453,7 +453,16 @@ text.innerText = "You block the " + enemies[battle].name + " attack and take red
 };
 
 function heal() {
-text.innerText = "You heal"
+if (inventory.includes(items[0].name)){
+  health += 10;
+  healthValue.innerText = health;
+  text.innerText = "You heal"
+  const index = inventory.indexOf(items[0])
+  const x = inventory.splice(index, 1)
+} else {
+  text.innerText = "You do not have any Health Potions in your inventory";
+};
+
 };
 
 function run() {
