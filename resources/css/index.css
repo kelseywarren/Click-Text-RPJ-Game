@@ -18,6 +18,7 @@ body {
     align-items: center;
     margin: auto;
     border: 1px solid black;
+    font-size: 19px;
   }
   
   #enemy {
@@ -82,24 +83,20 @@ body {
   }
   
   #matrix {
-    border: 1px solid black;
     padding: 10px;
     
   }
   
   #forest {
-    border: 1px solid black;
     padding: 10px;
     
   }
   
   #abyss {
-    border: 1px solid black;
     padding: 10px;
   }
   
   #store {
-    border: 1px solid black;
     padding: 10px;
   }
   #stats {
