@@ -46,8 +46,10 @@ body {
 
   .buttons { 
     width: 100px;
-    height: 45px;
+    height: 55px;
     text-align: center;
+    font-size: 14px;
+    font-weight: bold;
    }
   
    #button00 {
@@ -55,6 +57,7 @@ body {
     height: 35px;
     display: none;
     margin-right: 105px;
+  
    
    }
 
