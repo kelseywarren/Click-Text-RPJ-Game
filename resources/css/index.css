@@ -43,6 +43,20 @@ body {
     padding: 15px;
   }
 
+  .buttons { 
+    width: 100px;
+    height: 45px;
+    text-align: center;
+   }
+  
+   #button00 {
+    width: 350px;
+    height: 35px;
+    display: none;
+    margin-right: 105px;
+   
+   }
+
   #inv {
     display: block;
   }
@@ -96,7 +110,10 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 400px;
+    width: 450px;
+    height: auto;
+    font-size: 20px; 
+
   }
   #health, #coins, #level {
     padding: 20px;
