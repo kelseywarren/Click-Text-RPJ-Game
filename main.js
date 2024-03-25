@@ -501,6 +501,40 @@ function playerDamaged(){
   }
 };
 
+function startOver() { 
+  enemy.style.display = "none";
+  wepShop.style.display = "none";
+  itemShop.style.display = "none";
+  button00.style.display = "none";
+  button1.style.display = "block";
+  button2.style.display = "block";
+  button3.style.display = "block";
+  button4.style.display = "block";
+  text.innerText = "You are back at the starting point. Try to escape the paradigm shift again"
+  button1.style.backgroundColor = "" 
+  button2.style.backgroundColor = "" 
+  button3.style.backgroundColor = "" 
+  button1.style.borderRadius = "";
+  button2.style.borderRadius = "";
+  button3.style.borderRadius = "";
+  button4.style.borderRadius = "";
+  button1.innerText = "Matrix";
+  button2.innerText = "Floating Forest";
+  button3.innerText = "Azure Abyss";
+  button4.innerText = "Store";
+  button1.onclick = goMatrix;
+  button2.onclick = goForest;
+  button3.onclick = goAbyss;
+  button4.onclick = goStore;
+  health = 100;
+  healthValue.innerText = health;
+  coins = 1000;
+  coinValue.innerText = coins;
+  level = 1;
+  level.innerText = level;
+
+};
+
 function enemyDamaged() {
   enemyHealthValue.innerText -= weapons[equippedWeapon].power;
   if (enemyHealthValue.innerText <= 0) {
@@ -517,10 +551,52 @@ function enemyDamaged() {
     button00.innerText = "Leave Battle";
     button00.onclick = postBattle;
   }
-
-
-  if (enemyHealthValue.innerText <= 0) {
-    text.innerText = "You have defeated " + enemies[battle].name + " "; 
-  }
 };
 
+function postBattle() {  
+  enemy.style.display = "none";
+  button00.style.display = "none";
+  button1.style.display = "block";
+  button2.style.display = "block";
+  button3.style.display = "block";
+  button4.style.display = "block";
+  text.innerText = "You return from a battle. Continue exploring to find your way out the paradigm shift"
+  button1.style.backgroundColor = "";
+  button2.style.backgroundColor = "";
+  button3.style.backgroundColor = "";
+  button1.style.borderRadius = "";
+  button2.style.borderRadius = "";
+  button3.style.borderRadius = "";
+  button4.style.borderRadius = "";
+  button1.innerText = "Matrix";
+  button2.innerText = "Floating Forest";
+  button3.innerText = "Azure Abyss";
+  button4.innerText = "Store";
+  button1.onclick = goMatrix;
+  button2.onclick = goForest;
+  button3.onclick = goAbyss;
+  button4.onclick = goStore;
+}
+
+function resetButtons() { //----- new  button refactoring 
+  button00.style.display = "none";
+  button1.style.display = "block";
+  button2.style.display = "block";
+  button3.style.display = "block";
+  button4.style.display = "block";
+  button1.style.backgroundColor = "";
+  button2.style.backgroundColor = "";
+  button3.style.backgroundColor = "";
+  button1.style.borderRadius = "";
+  button2.style.borderRadius = "";
+  button3.style.borderRadius = "";
+  button4.style.borderRadius = "";
+  button1.innerText = "Matrix";
+  button2.innerText = "Floating Forest";
+  button3.innerText = "Azure Abyss";
+  button4.innerText = "Store";
+  button1.onclick = goMatrix;
+  button2.onclick = goForest;
+  button3.onclick = goAbyss;
+  button4.onclick = goStore;
+}
