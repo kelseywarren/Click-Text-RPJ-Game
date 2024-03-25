@@ -5,6 +5,8 @@ const button2 = document.getElementById('button2');
 const button3 = document.getElementById('button3');
 const button4 = document.getElementById('button4');
 
+const button00 = document.getElementById('button00')
+
 const button5 = document.getElementById('inventoryMenu');
 const button6 = document.getElementById('enemyInfo');
 
@@ -384,6 +386,13 @@ function goFight() {
   button2.onclick = block;
   button3.onclick = heal;
   button4.onclick = run;
+  button1.style.backgroundColor = "orange" 
+  button2.style.backgroundColor = "blue" 
+  button3.style.backgroundColor = "green" 
+  button1.style.borderRadius = "30px";
+  button2.style.borderRadius = "30px";
+  button3.style.borderRadius = "30px";
+  button4.style.borderRadius = "30px";
 
 };
 
@@ -467,6 +476,13 @@ if (inventory.includes(items[0].name)){
 
 function run() {
 goBase();
+button1.style.backgroundColor = "" 
+button2.style.backgroundColor = ""
+button3.style.backgroundColor = "" 
+button1.style.borderRadius = "";
+button2.style.borderRadius = "";
+button3.style.borderRadius = "";
+button4.style.borderRadius = "";
 };
 
 function playerDamaged(){
