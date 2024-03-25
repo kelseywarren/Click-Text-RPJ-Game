@@ -561,21 +561,8 @@ function postBattle() {
   button3.style.display = "block";
   button4.style.display = "block";
   text.innerText = "You return from a battle. Continue exploring to find your way out the paradigm shift"
-  button1.style.backgroundColor = "";
-  button2.style.backgroundColor = "";
-  button3.style.backgroundColor = "";
-  button1.style.borderRadius = "";
-  button2.style.borderRadius = "";
-  button3.style.borderRadius = "";
-  button4.style.borderRadius = "";
-  button1.innerText = "Matrix";
-  button2.innerText = "Floating Forest";
-  button3.innerText = "Azure Abyss";
-  button4.innerText = "Store";
-  button1.onclick = goMatrix;
-  button2.onclick = goForest;
-  button3.onclick = goAbyss;
-  button4.onclick = goStore;
+  
+  resetButtons; 
 }
 
 function resetButtons() { //----- new  button refactoring 
