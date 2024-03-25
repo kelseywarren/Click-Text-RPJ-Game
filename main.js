@@ -491,6 +491,13 @@ function playerDamaged(){
 
   if (health <= 0){
     text.innerText = "You have died";
+    button00.style.display ="block"
+    button00.innerText = "Restart"
+    button00.onclick = startOver;
+    button1.style.display = "none";
+    button2.style.display = "none";
+    button3.style.display = "none";
+    button4.style.display = "none";
   }
 };
 
