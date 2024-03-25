@@ -503,6 +503,21 @@ function playerDamaged(){
 
 function enemyDamaged() {
   enemyHealthValue.innerText -= weapons[equippedWeapon].power;
+  if (enemyHealthValue.innerText <= 0) {
+    text.innerText = "You have defeated " + enemies[battle].name + "! You receive 25 coins!";
+    coins += 25;
+    level += 1;
+    coinsValue.innerText = coins;
+    levelValue.innerText = level;
+    button1.style.display = "none";
+    button2.style.display = "none";
+    button3.style.display = "none";
+    button4.style.display = "none";
+    button00.style.display = "block";
+    button00.innerText = "Leave Battle";
+    button00.onclick = postBattle;
+  }
+
 
   if (enemyHealthValue.innerText <= 0) {
     text.innerText = "You have defeated " + enemies[battle].name + " "; 
