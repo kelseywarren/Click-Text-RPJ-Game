@@ -1,8 +1,7 @@
 <h1>Project Phantasy</h1>
 <h2>About</h2>
 <p>
-  This project was inspired from freeCodeCamp's Learn Javascript By Creating an RPG tutorial. I expanded on a many aspects from the original tutorial, and added new features. 
-  I will continue to develop this project for as long as I am able to progress my skills and learn from it. 
+  This project was inspired from freeCodeCamp's Learn Javascript By Creating an RPG tutorial. I expanded on many aspects from the original, and have added many new features.
 </p>
 
 <h2>Purpose</h2>
@@ -14,16 +13,13 @@
 
 <h2>Technologies</h2>
 <ul>
+<li>JavaScript</li>
 <li>HTML</li>
 <li>CSS</li>
-<li>Javascript</li>
-<li>Git/GitHub</li>
-<li>Browser</li>
 </ul>
 
 <h2>Notes</h2>
 <ul>
   <li> Game is currently only optimized for desktop. </li>
-  <li> Currently focused on building functionalilty and features, with styling and presentation of the game as the secondary focus. </li>
-  <li> Despite being a personal project, I am open to anyone making commits and pull requests. I welcome any opportunity to learn. </li>
+  <li> Currently focused on building functionalilty and features. Upgraded styling and presentation will be implemented over time. </li>
 </ul>
