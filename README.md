@@ -1,6 +1,6 @@
 # Purpose
 
-This project was inspired from freeCodeCamp's Learn Javascript By Creating an RPG tutorial. I expanded on many aspects from the original, and added some new features. The main goal was to use this project to get practice working with some key JavaScript fundementals, as well practice using Git/GitHub. 
+This project was inspired from freeCodeCamp's Learn Javascript By Creating an RPG tutorial. I expanded on many aspects from the original, and added some new features. The main goal was to use this project to get practice working with some key JavaScript fundamentals, as well practice using Git/GitHub. 
 
 
 ## Technologies
