@@ -8,6 +8,6 @@ The main goal was to use this project to:
 2. Get familiar with using git/github
 
 ## Technologies
-- Javascript
+- JavaScript
 - HTML
 - CSS
